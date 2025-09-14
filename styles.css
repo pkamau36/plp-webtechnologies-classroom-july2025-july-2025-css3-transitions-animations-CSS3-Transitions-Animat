@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 40px;
+  background: #f4f4f9;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#driveBtn {
+  padding: 10px 20px;
+  border: none;
+  background: #0077cc;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+#driveBtn:hover {
+  background: #005fa3;
+}
+
+#car {
+  font-size: 64px;
+  margin: 40px auto;
+  display: inline-block;
+}
+
+/* Car movement animation */
+@keyframes drive {
+  0% { transform: translateX(-200px); }
+  50% { transform: translateX(200px); }
+  100% { transform: translateX(-200px); }
+}
+
+.drive {
+  animation: drive 3s linear infinite;
+}
